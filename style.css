@@ -6,7 +6,6 @@
     align-items: center; 
     text-align: center; 
     justify-content: center; 
-    /* margin: 50px;   */
     padding: 10px; 
 }
 
@@ -23,6 +22,8 @@ h2{
     text-align: center; 
     margin: 15px; 
 }
+
+
 h3 {
     font-family: cursive; 
     color: rgb(225, 54, 54); 
@@ -31,57 +32,61 @@ h3 {
 }
 
 
-
 .container{ 
     display: flex; 
     gap: 20px; 
     flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
+    align-items: center;  
     height: auto;  
     width: 100%; 
-    gap: 20px; 
+    gap: 10px; 
     padding: 30px; 
-
 }
 
-
+.item .col-6 {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    flex: 1; /* Ensure the columns occupy equal width */
+}
 
 .item{ 
     display: flex; 
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
     flex-direction: row; 
-    width: 800px; 
     width: 100%; 
     max-width: 800px; 
     height: 150px;  
-    margin: 10px;     
+    margin: 10px 0;     
     align-items: center; 
     box-sizing: border-box; 
-    
+    gap: 10px; 
 }
+
 
 .title {
     font-family: Arial, Helvetica, sans-serif; 
-    color: black; 
+    color: rgb(0, 0, 0); 
     font-size: 16px; 
     text-align: left; 
     font-weight: 600; 
     margin: 3px; 
 }
 
+
 #inline{
     justify-content: space-between; 
     display:flex;
 }
 
-.item .description{
+
+.description{
     font-family: Arial, Helvetica, sans-serif; 
     color: rgb(88, 87, 87); 
     font-size: 13px; 
     padding: 10px; 
     text-align: left; 
 }
+
 
 .price {
     text-align: left; 
@@ -91,29 +96,32 @@ h3 {
 
 
 .row{
-    /* text-align: center;  */
     display: flex; 
     flex-wrap: wrap; 
     justify-content: center; 
     max-width: 100%; 
 }
 
+
 .item img {
     border-radius: 5%; 
     width: 150px; 
     height: 150px; 
     object-fit: cover; 
+    /* align-items: right;  */
+    /* margin-right: 90px; */
+    margin-left: auto; 
 }
+
 
 .add{ 
     text-align: right; 
-    background-color: rgb(227, 227, 227); 
+    background-color: rgb(243, 192, 6); 
     border-radius: 10px; 
     padding: 5px 10px; 
     font-size: 15px; 
     display: inline-block;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24);
-
 }
 
 
